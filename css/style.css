@@ -241,5 +241,6 @@
         #t9,#t10,#t11,#t12   {
             cursor:pointer;
             min-width: 185pt;
-            padding-bottom: 3.5pt;
+            padding-bottom: 10.5pt;
+            margin-right: 7pt;
         }
