@@ -1,0 +1,245 @@
+
+        footer{
+            width: 100%;
+            position: fixed;
+            bottom: 0pt;
+
+        }
+
+        .left   {
+            padding-left: 0pt;
+            padding-top: 20pt;
+            min-width: 50%;
+        }
+        
+        .right  {
+            float: right;
+            padding-top: 25pt;
+            padding-left: 75pt;
+            color:#8B4513;
+            min-width: 50%;
+            float: right;
+        }
+
+        #myImg {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            opacity: 0.8;
+            height:120pt; 
+            border-radius: 10px; 
+            width: 180pt;
+        }
+
+        #myImg:hover {
+            transition: 0.3s;
+            opacity: 1;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 15pt; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+        }
+
+        /* Modal Content (image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        footer  {
+            color: #bbb;
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+
+            background: -webkit-linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* Standard syntax (must be last) */
+        }
+
+        h1  {
+            color: #bbb;
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+
+            background: -webkit-linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* Standard syntax (must be last) */
+
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: dimgray;
+            border-radius: 10px;
+        }
+
+        h3  {
+            color: #bbb;
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+
+            background: -webkit-linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* Standard syntax (must be last) */
+
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: dimgray;
+            border-radius: 10px;
+            padding: 0;
+            padding-top: 10pt;
+        }
+
+        /* Add Animation */
+        .modal-content, .close, .down {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @-webkit-keyframes zoom {
+            from {-webkit-transform: scale(0)}
+            to {-webkit-transform: scale(1)}
+        }
+
+        @keyframes zoom {
+            from {transform: scale(0.1)}
+            to {transform: scale(1)}
+        }
+
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 15pt;
+            right: 30%;
+            color: #d9531f;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .down{
+            position: absolute;
+            top: 85%;
+            right: 48%;
+            color: #bbb;
+            opacity: 0.5;
+            transition: 0.3s;
+            font-size: 5em;
+        }
+
+        .down:hover,
+        .down:focus {
+            color: #5cb85c;
+            opacity: 1;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px){
+            .modal-content {
+                width: 100%;
+            }
+        }
+
+        .img-circle {
+            height: 35pt;
+        }
+
+        .floating{
+            float: left;
+            -webkit-animation-name: Floatingx;
+            -webkit-animation-duration: 3s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: ease-in-out;
+            -moz-animation-name: Floating;
+            -moz-animation-duration: 3s;
+            -moz-animation-iteration-count: infinite;
+            -moz-animation-timing-function: ease-in-out;
+            
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+
+        .col-sm-3 {
+            width: 18%;
+        }
+
+        .row {
+            margin-right: 29pt;
+            margin-left: 29pt;
+        }
+
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes run {
+            0%   {left: -100%; top: -100%;}
+            100% {left:0; top:0;}
+        }
+
+        @-webkit-keyframes Floatingx{
+            from {-webkit-transform:translate(0, 0px);}
+            65% {-webkit-transform:translate(0, 15px);}
+            to {-webkit-transform: translate(0, -0px);    }    
+        }
+
+        @-moz-keyframes Floating{
+            from {-moz-transform:translate(0, 0px);}
+            65% {-moz-transform:translate(0, 15px);}
+            to {-moz-transform: translate(0, -0px);}    
+        }
+
+        #fill   {
+            height: 75pt;
+        }
+
+        .fa{
+            font-size:25pt;
+            color:gray;
+        }
+
+        .facebook:hover,
+        .facebook:focus {
+            opacity: 0.75;
+            color: #3B5998 ;
+        }
+
+        .linkedin:hover,
+        .linkedin:focus {
+            opacity: 0.75;
+            color: #007bb5;
+        }
+
+        .git:hover,
+        .git:focus{
+            opacity: 0.75;
+            color: #6e5494;
+        }
+        #t1,#t2,#t3,#t4,
+        #t5,#t6,#t7,#t8,
+        #t9,#t10,#t11,#t12   {
+            cursor:pointer;
+            min-width: 185pt;
+            padding-bottom: 3.5pt;
+        }
