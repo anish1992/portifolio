@@ -1,4 +1,5 @@
 # portifolio
+![Alt text](shot.png?raw=true "portifolio website")
 
 ## Disclaimer
 This project was only for demonstration of my skills for finding. 
