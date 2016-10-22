@@ -73,7 +73,7 @@ and open the template in the editor.
                             </h1>
                         </div>
                     </div>
-                    <div class="col-sm-3" id="t2" align="center"> 
+                    <div class="col-sm-3" id="t2" align="center" data-toggle="modal" data-target=".bd-example-modal-lg"> 
                         <img id="myImg" src="images/work.png" >
                         <div style="position: absolute; top:76pt; width: 180pt;">
                             <h3 style="padding-top: 9.5pt;">
@@ -136,7 +136,7 @@ and open the template in the editor.
                 
                     <div class="col-sm-3" id="t9" align="center"> 
                         <img id="myImg" src="images/share.jpg" >
-                        <div style="position: absolute; top:76pt; width: 180pt; border-radius: 10px;">
+                        <div style="position: absolute; top:76pt; width: 180pt;">
                             <h1>
                                 Share <i class="material-icons screen_share" style="font-size:21px;">screen_share</i> 
                             </h1>
@@ -144,7 +144,7 @@ and open the template in the editor.
                     </div>
                     <div class="col-sm-3" id="t10" align="center">
                         <img id="myImg" src="images/photo.png" >
-                        <div style="position: absolute; top:76pt; width: 180pt; border-radius: 10px;">
+                        <div style="position: absolute; top:76pt; width: 180pt;">
                             <h1>
                                 Photos
                             </h1>
@@ -152,7 +152,7 @@ and open the template in the editor.
                     </div>
                     <div class="col-sm-3" id="t11" align="center">
                         <img id="myImg" src="images/con_1.png" >
-                        <div style="position: absolute; top:76pt; width: 180pt; border-radius: 10px;">
+                        <div style="position: absolute; top:76pt; width: 180pt; ">
                             <h1>
                                 Contact Me
                             </h1>
@@ -160,7 +160,7 @@ and open the template in the editor.
                     </div>
                     <div class="col-sm-3" id="t12" align="center">
                         <img id="myImg" src="images/me.jpg" >
-                        <div style="position: absolute; top:76pt; width: 180pt; border-radius: 10px;">
+                        <div style="position: absolute; top:76pt; width: 180pt;">
                             <h1>
                                 About Me <i class="fa fa-info" style="font-size:24px;"></i>
                             </h1>
@@ -171,31 +171,102 @@ and open the template in the editor.
             <div class="col-sm-1"></div>
         </div>
  		
+        
+
  		<!-- modals -->
         
         <div id="resume" class="modal">
-            
-            <!-- image -->
-            <img style="width: 80%;" class="modal-content" id="resumeImg">
-            <!-- container -->
-            <i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
-            <a href="images/resume.pdf" download>
-                <i class="material-icons down floating" >get_app</i>                
-            </a>
-         
+            <div align="center" style="width: 80%;" class="modal-content" >
+            	<!-- image -->
+	            <img class="modal-content" id="resumeImg" style="width: 100%;">
+	            <!-- container -->
+	            <i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
+	            <a href="images/resume.pdf" download>
+	                <i class="material-icons down floating" >get_app</i>                
+	            </a>
+            </div> 
         </div>
 
-        <div id="work" class="modal">
+        <div id="work" class="modal" >
             <!-- body-->
-            <div align="center" style="width:75%; background-color: #5cb85c;" class="modal-content" >
+            <div class="modal-content" style="width:75%; background-color: #e9ebee;">
 
-                <p><i class="fa fa-exclamation-triangle" style="font-size:48px;color:red"></i>
-                Deplyment not compleat<i class="fa fa-exclamation-triangle" style="font-size:48px;color:red"></i></p>
+                <div style="height:40pt;"></div>
+            	<i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
+            	<div style="width: 95%;">
+	            	<div class="media" style="background-color: #ccc; border-radius:0 10px 10px 0; ">
+					  	<div class="media-left media-middle">
+					    	<a href="#">
+					      		<img class="media-object" tyle="padding-left: 5pt;" src="images/75health_logo.png" alt="...">
+					    	</a>
+					  	</div>
+					  	<div class="media-body" style="padding-top: 5pt;">
+					    	<h4 class="media-left media-heading" style="float: left; ">Intern -</h4>
+					    	<h4 class="media-right media-heading" style="float: right; padding-right: 5pt;">Jul. 2016 - Jun. 2016</h4>
+					    	<br>
+					    	<br>
+					    	<p>
+					    	• Performed closed box testing, generated new use cases and listing bugs.<br>
+							• Improver user experience based on predefined use cases.
+					    	</p>
+					  	</div>
+					</div>
+					<div style="height: 5pt;"></div>
+					<div class="media" style="background-color: #ccc; border-radius:0 10px 10px 0; ">
+					  	<div class="media-left media-middle">
+					    	<a href="#">
+					      		<img class="media-object" style="padding-left: 5pt;" src="images/sfsu_logo.png" alt="...">
+					    	</a>
+					  	</div>
+					  	<div class="media-body" style="padding-top: 5pt;">
+					    	<h4 class="media-left media-heading" style="float: left; ">Student Assistant -</h4>
+					    	<h4 class="media-right media-heading" style="float: right; padding-right: 5pt;">Aug. 2014 - May. 2016</h4>
+					    	<br>
+					    	<br>
+					    	<p>
+					    	• Setting up and organized equipment for the Engineering lab experiments.<br>
+							• Responsible to set up, maintian and repair dipartment computer.
+							</p>
+					  	</div>
+					</div>
+					<div style="height: 5pt;" ></div>
+					<div class="media" style="background-color: #ccc; border-radius:0 10px 10px 0;">
+					  	<div class="media-left media-middle">
+					    	<a href="#">
+					      		<img class="media-object" style="padding-left: 5pt;" src="images/kaaspro_logo.png" alt="...">
+					    	</a>
+					  	</div>
+					  	<div class="media-body" style="padding-top: 5pt;">
+					    	<h4 class="media-left media-heading" style="float: left; ">Intern -</h4>
+					    	<h4 class="media-right media-heading" style="float: right; padding-right: 5pt;">Jun. 2013 - Aug. 2013</h4>
+					    	<br>
+					    	<br>
+					    	<p>
+					    	• Preformed Research and Documentation for a new Web App project with the use of open-sorce API’s and Frameworks.
+					    	</p>
+					  	</div>
+					</div>
+					<div style="height: 5pt;"></div>
+					<div class="media" style="background-color: #ccc; border-radius:0 10px 10px 0;">
+					  	<div class="media-left media-middle">
+					    	<a href="#">
+					      		<img class="media-object" style="padding-left: 5pt;" src="images/kaaspro_logo.png" alt="...">
+					    	</a>
+					  	</div>
+					  	<div class="media-body" style="padding-top: 5pt;">
+					    	<h4 class="media-left media-heading" style="float: left; ">Intern -</h4>
+					    	<h4 class="media-right media-heading" style="float: right; padding-right: 5pt;">Jun. 2012 - Aug. 2012</h4>
+					    	<br>
+					    	<br>
+					    	<p>
+					    	• Conducted non invasive testing using CVS and Bugzilla for an E-education Web App
+					    	</p>
+					  	</div>
+					</div>
+					<div style="height: 15pt;"></div>
+				</div>
             </div>
-            
-            <!-- container -->
-            <i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
-         
+            <div style="height: 100% " onclick=" work.style.display = 'none';" ></div>
         </div>
 
         <div id="Projects" class="modal">
@@ -203,11 +274,10 @@ and open the template in the editor.
             <div align="center" style="width:75%; background-color: #5cb85c;" class="modal-content" >
                 <p><i class="fa fa-exclamation-triangle" style="font-size:48px;color:red"></i>
                 Deplyment not compleat<i class="fa fa-exclamation-triangle" style="font-size:48px;color:red"></i></p>
+                 <!-- container -->
+                <i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
             </div>
-            
-            <!-- container -->
-            <i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
-         
+            <div style="height: 100%" onclick=" Projects.style.display = 'none';" ></div>
         </div>
 
         <div id="school" class="modal">
@@ -215,11 +285,10 @@ and open the template in the editor.
             <div align="center" style="width:75%; background-color: #5cb85c;" class="modal-content" >
                 <p><i class="fa fa-exclamation-triangle" style="font-size:48px;color:red"></i>
                 Deplyment not compleat<i class="fa fa-exclamation-triangle" style="font-size:48px;color:red"></i></p>
+                <!-- container -->
+                <i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
             </div>
-            
-            <!-- container -->
-            <i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
-         
+            <div style="height: 100%" onclick=" school.style.display = 'none';" ></div>
         </div>
 
         <div id="Honors" class="modal">
@@ -227,11 +296,10 @@ and open the template in the editor.
             <div align="center" style="width: 75%; background-color: #5cb85c;" class="modal-content" >
                 <p><i class="fa fa-exclamation-triangle" style="font-size:48px;color:red"></i>
                 Deplyment not compleat<i class="fa fa-exclamation-triangle" style="font-size:48px;color:red"></i></p>
-            </div>
-            
-            <!-- container -->
-            <i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
-         
+                <!-- container -->
+                <i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
+            </div>  
+            <div style="height: 100%" onclick=" Honors.style.display = 'none';" ></div>    
         </div>
 
         <div id="Scrambler" class="modal">
@@ -239,10 +307,10 @@ and open the template in the editor.
             <div align="center" style="width: 75%; background-color: #5cb85c;" class="modal-content" >
                 <p><i class="fa fa-exclamation-triangle" style="font-size:48px;color:red"></i>
                 Deplyment not compleat<i class="fa fa-exclamation-triangle" style="font-size:48px;color:red"></i></p>
+                <!-- container -->
+                <i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
             </div>
-            <!-- container -->
-            <i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
-         
+            <div style="height: 100%" onclick=" Scrambler.style.display = 'none';" ></div>
         </div>
 
         <div id="now" class="modal">
@@ -250,10 +318,10 @@ and open the template in the editor.
             <div align="center" style="width: 75%; background-color: #5cb85c;" class="modal-content" >
                <p><i class="fa fa-exclamation-triangle" style="font-size:48px;color:red"></i>
                 Deplyment not compleat<i class="fa fa-exclamation-triangle" style="font-size:48px;color:red"></i></p>
+                <!-- container -->
+            	<i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
             </div>
-            <!-- container -->
-            <i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
-         
+            <div style="height: 100%" onclick=" now.style.display = 'none';" ></div>
         </div>
 
         <div id="share" class="modal">
@@ -261,10 +329,10 @@ and open the template in the editor.
             <div align="center" style="width:75%; background-color: #5cb85c;" class="modal-content" >
                 <p><i class="fa fa-exclamation-triangle" style="font-size:48px;color:red"></i>
                 Deplyment not compleat<i class="fa fa-exclamation-triangle" style="font-size:48px;color:red"></i></p>
+                <!-- container -->
+            	<i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
             </div>
-            <!-- container -->
-            <i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
-         
+            <div style="height: 100%" onclick=" share.style.display = 'none';" ></div>
         </div>
 
         <div id="photo" class="modal">
@@ -272,10 +340,10 @@ and open the template in the editor.
             <div align="center" style="width: 75%; background-color: #5cb85c;" class="modal-content" >
                 <p><i class="fa fa-exclamation-triangle" style="font-size:48px;color:red"></i>
                 Deplyment not compleat<i class="fa fa-exclamation-triangle" style="font-size:48px;color:red"></i></p>
+                <!-- container -->
+            	<i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
             </div>
-            <!-- container -->
-            <i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
-         
+            <div style="height: 100%" onclick=" photo.style.display = 'none';" ></div>
         </div>
 
         <div id="about" class="modal">
@@ -283,10 +351,11 @@ and open the template in the editor.
             <div align="center" style="width: 75%; background-color: #5cb85c;" class="modal-content" >
                 <p><i class="fa fa-exclamation-triangle" style="font-size:48px;color:red"></i>
                 Deplyment not compleat<i class="fa fa-exclamation-triangle" style="font-size:48px;color:red"></i></p>
+                <!-- container -->
+                
+            	<i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
             </div>
-            <!-- container -->
-            <i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
-         
+            <div style="height: 100%" onclick=" about.style.display = 'none';" ></div>
         </div>
         
         <!--footer -->
@@ -464,7 +533,6 @@ and open the template in the editor.
         close12.onclick = function() {
             about.style.display = "none";
         }
-
 
     
     </script>

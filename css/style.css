@@ -124,8 +124,8 @@
         /* The Close Button */
         .close {
             position: absolute;
-            top: 15pt;
-            right: 30%;
+            top: 0;
+            right: 5%;
             color: #d9531f;
             font-size: 40px;
             font-weight: bold;
@@ -141,8 +141,8 @@
 
         .down{
             position: absolute;
-            top: 85%;
-            right: 48%;
+            top: 65%;
+            right: 45%;
             color: #bbb;
             opacity: 0.5;
             transition: 0.3s;
