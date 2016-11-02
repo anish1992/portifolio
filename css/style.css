@@ -63,7 +63,7 @@
         footer  {
             color: #bbb;
             background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+            background: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 
             background: -webkit-linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
             background: -o-linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
@@ -74,31 +74,15 @@
         h1  {
             color: #bbb;
             background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
-
-            background: -webkit-linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* Standard syntax (must be last) */
-
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: dimgray;
-            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+            border-radius: 0px 0px 10px 10px;
         }
 
         h3  {
             color: #bbb;
             background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
-
-            background: -webkit-linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1)); /* Standard syntax (must be last) */
-
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: dimgray;
-            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+            border-radius: 0px 0px 10px 10px;
             padding: 0;
             padding-top: 10pt;
         }
