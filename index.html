@@ -115,14 +115,14 @@ and open the template in the editor.
                             </h1>
                         </div>
                     </div>
-                    <div class="col-sm-3" id="t6" align="center">
+                    <!--div class="col-sm-3" id="t6" align="center">
                         <img id="myImg" src="images/src.png" >
                         <div style="position: absolute; top:76pt; width: 180pt;">
                             <h1>
                                 Cryptography
                             </h1>
                         </div>
-                    </div>
+                    </div-->
                     <div class="col-sm-3" id="t7" align="center">
                         <a href="https://sites.google.com/site/ezaquariumsfsu">
                             <img id="myImg" src="images/EZA.png" >
@@ -142,7 +142,7 @@ and open the template in the editor.
                         </div>
                      </div>   
                 
-                    <div class="col-sm-3" id="t9" align="center"> 
+                    <!--div class="col-sm-3" id="t9" align="center"> 
                         <img id="myImg" src="images/share.jpg" >
                         <div style="position: absolute; top:76pt; width: 180pt;">
                             <h1>
@@ -157,7 +157,7 @@ and open the template in the editor.
                                 Photos
                             </h1>
                         </div>
-                    </div>
+                    </div-->
                     <div class="col-sm-3" id="t11" align="center">
                         <img id="myImg" src="images/con_1.png" >
                         <div style="position: absolute; top:76pt; width: 180pt; ">
@@ -444,8 +444,8 @@ and open the template in the editor.
 
         <div id="Honors" class="modal">
             <!-- body-->
-            <div style="width: 75%; background-color: #e9ebee;" class="modal-content" >
-                <div style="height:40pt;" align="center">
+            <div style="width: 75%; background-color: #e9ebee;" align="center" class="modal-content" >
+                <div style="height:40pt;" >
                 	<h2>Honors and Rewards</h2>
                 </div>
                 <i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
@@ -471,9 +471,9 @@ and open the template in the editor.
             <div style="height: 100%" onclick=" Honors.style.display = 'none';" ></div>    
         </div>
 
-        <div id="Scrambler" class="modal">
+        <!--div id="Scrambler" class="modal">
             <!-- body-->
-            <div align="center" style="width: 75%; background-color: #e9ebee;" class="modal-content" >
+            <!--div align="center" style="width: 75%; background-color: #e9ebee;" class="modal-content" >
                 <div style="height:40pt;" align="center">
                 	<h2>Text Scrambler App</h2>
                 </div>
@@ -494,7 +494,7 @@ and open the template in the editor.
                 </div>
             </div>
             <div style="height: 100%" onclick=" Scrambler.style.display = 'none';" ></div>
-        </div>
+        </div-->
 
         <div id="now" class="modal">
             <!-- body-->
@@ -519,9 +519,9 @@ and open the template in the editor.
             <div style="height: 100%" onclick=" now.style.display = 'none';" ></div>
         </div>
 
-        <div id="share" class="modal">
+        <!--div id="share" class="modal">
             <!-- body-->
-            <div align="center" style="width:75%; background-color: #e9ebee;" class="modal-content" >
+            <!--div align="center" style="width:75%; background-color: #e9ebee;" class="modal-content" >
                 <div style="height:40pt;" align="center">
                 	<h2>
                 		share this webite with others :)
@@ -544,11 +544,11 @@ and open the template in the editor.
                 </div>
             </div>
             <div style="height: 100%" onclick=" share.style.display = 'none';" ></div>
-        </div>
+        </div-->
 
-        <div id="photo" class="modal">
+        <!--div id="photo" class="modal">
             <!-- body-->
-            <div align="center" style="width: 75%; background-color: #e9ebee;" class="modal-content" >
+            <!--div align="center" style="width: 75%; background-color: #e9ebee;" class="modal-content" >
                 <div style="height:40pt;" align="center">
                 	<h2>Pictures</h2>
                 </div>
@@ -569,7 +569,7 @@ and open the template in the editor.
                 </div>
             </div>
             <div style="height: 100%" onclick=" photo.style.display = 'none';" ></div>
-        </div>
+        </div-->
 
         <div id="about" class="modal">
             <!-- body-->
@@ -647,10 +647,10 @@ and open the template in the editor.
         var tile_3 = document.getElementById('t3');
         var tile_4 = document.getElementById('t4');
         var tile_5 = document.getElementById('t5');
-        var tile_6 = document.getElementById('t6');
+        //var tile_6 = document.getElementById('t6');
         var tile_8 = document.getElementById('t8');
-        var tile_9 = document.getElementById('t9');
-        var tile_10 = document.getElementById('t10');
+        //var tile_9 = document.getElementById('t9');
+        //var tile_10 = document.getElementById('t10');
         var tile_12 = document.getElementById('t12');
 
 		// Get the resume modal
@@ -659,11 +659,11 @@ and open the template in the editor.
         var Projects = document.getElementById('Projects');
         var school = document.getElementById('school'); 
         var Honors = document.getElementById('Honors');  
-        var Scrambler = document.getElementById('Scrambler');  
+        //var Scrambler = document.getElementById('Scrambler');  
         var now = document.getElementById('now');         
         var about = document.getElementById('about');
-        var photo = document.getElementById('photo');
-        var share = document.getElementById('share');
+        //var photo = document.getElementById('photo');
+        //var share = document.getElementById('share');
 
 	    // image one container
 	    var resumeImg = document.getElementById("resumeImg");
@@ -694,17 +694,17 @@ and open the template in the editor.
                   
         }
 
-        tile_6.onclick = function(){ // tile important move onclick to tile 
+        /*tile_6.onclick = function(){ // tile important move onclick to tile 
             Scrambler.style.display = "block"; 
                     
-        }
+        }*/
 
         tile_8.onclick = function(){ // tile important move onclick to tile 
             now.style.display = "block";  
             
         }
 
-        tile_9.onclick = function(){ // tile important move onclick to tile 
+        /*tile_9.onclick = function(){ // tile important move onclick to tile 
             share.style.display = "block"; 
                      
         }
@@ -712,7 +712,7 @@ and open the template in the editor.
         tile_10.onclick = function(){ // tile important move onclick to tile 
             photo.style.display = "block";      
            
-        }
+        }*/
 
         tile_12.onclick = function(){ // tile important move onclick to tile 
             about.style.display = "block";  
@@ -725,11 +725,11 @@ and open the template in the editor.
         var close3 = document.getElementsByClassName("close")[2];
         var close4 = document.getElementsByClassName("close")[3];
         var close5 = document.getElementsByClassName("close")[4];
-        var close6 = document.getElementsByClassName("close")[5];
-        var close8 = document.getElementsByClassName("close")[6];
-        var close9 = document.getElementsByClassName("close")[7];
-        var close10 = document.getElementsByClassName("close")[8];
-        var close12 = document.getElementsByClassName("close")[9];
+        //var close6 = document.getElementsByClassName("close")[5];
+        var close8 = document.getElementsByClassName("close")[5];
+        //var close9 = document.getElementsByClassName("close")[7];
+        //var close10 = document.getElementsByClassName("close")[8];
+        var close12 = document.getElementsByClassName("close")[6];
 
 	    // When the user clicks on <span> (x), close the modal
 	    close1.onclick = function() {
@@ -752,21 +752,21 @@ and open the template in the editor.
             Honors.style.display = "none";
         }
 
-        close6.onclick = function() {
+        /*close6.onclick = function() {
             Scrambler.style.display = "none";
-        }
+        }*/
 
         close8.onclick = function() {
             now.style.display = "none";
         }
 
-        close9.onclick = function() {
+        /*close9.onclick = function() {
             share.style.display = "none";
         }
 
         close10.onclick = function() {
             photo.style.display = "none";
-        }
+        }*/
 
         close12.onclick = function() {
             about.style.display = "none";
