@@ -39,6 +39,9 @@ and open the template in the editor.
 
         <link rel="icon" type="image/jpg" href="images/anish.jpg">
 
+        <!-- jquary  -->
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 	</head>
 
 	<style type="text/css">
@@ -61,7 +64,7 @@ and open the template in the editor.
         
         <!--headder-->
         <div class="floating" >
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand">
                 <img alt="Brand" class="img-circle" src="images/anish_!.jpg">
             </a>
         </div>
@@ -158,10 +161,10 @@ and open the template in the editor.
                             </h1>
                         </div>
                     </div-->
-                    <div class="col-sm-3" id="t11" align="center">
-                        <img id="myImg" src="images/con_1.png" >
-                        <div style="position: absolute; top:76pt; width: 180pt; ">
-                            <h1>
+                    <div class="col-sm-3" id="t11" align="center" style="cursor:default;">
+                        <img id="myImg" src="images/con_1.png" style="cursor:default;">
+                        <div style="position: absolute; top:76pt; width: 180pt; cursor:default;">
+                            <h1 >
                                 Contact Me
                             </h1>
                         </div>
@@ -182,15 +185,17 @@ and open the template in the editor.
  		<!-- modals -->
         
         <div id="resume" class="modal">
-            <div align="center" style="width: 80%;" class="modal-content" >
-            	<!-- image -->
-	            <img class="modal-content" id="resumeImg" style="width: 100%;">
-	            <!-- container -->
-	            <i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
-	            <a href="images/resume.pdf" download>
-	                <i class="material-icons down floating" >get_app</i>                
-	            </a>
-            </div> 
+            <!--div class="modal-dialog" role="document"-->
+	            <div style="width: 80%;" class="modal-content" >
+	            	<!-- image -->
+		            <img class="modal-content" id="resumeImg" style="width: 100%;">
+		            <!-- container -->
+		            <i class="material-icons close bg-danger" style="font-size:25pt; color:red">cancel</i>
+		            <a href="images/resume.pdf" download>
+		                <i class="material-icons down floating" >get_app</i>                
+		            </a>
+	            </div> 
+	    	<!--/div-->
         </div>
 
         <div id="work" class="modal" >
@@ -772,6 +777,21 @@ and open the template in the editor.
             about.style.display = "none";
         }
 
+        $(document).escape(function() { 
+           alert('ESC button pressed'); 
+        });
+
+        $(document).keyup(function(e) {
+            if (e.keyCode === 27) {
+                resume.style.display = "none";
+                work.style.display = "none";
+                Projects.style.display = "none";
+                school.style.display = "none";
+                Honors.style.display = "none";
+                now.style.display = "none";
+                about.style.display = "none";
+            }
+        });
     
     </script>
 </html>
